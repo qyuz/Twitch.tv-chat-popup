@@ -1,27 +1,11 @@
-// added(	
-		// '.viewers',
-		// function($viewers) {
-			// console.log($viewers);
-			// $viewers.each(function(idx, el) {
-				// var $el, channelHref, widthPerc;
-				
-				// $el = $(el);
-				// channelHref = $el.closest('.channel.js-channel').find('.profile-photo').attr('href');
-				// widthPerc = 25;
-				
-				// $el.click(() => openWindow(channelHref, widthPerc));
-				// //$el.css('cursor', 'pointer');
-			// });
-		// }
-	// )
-console.log($('.following-col'))
+console.log('following', $('.following-col'));
 $('.following-col').on('click', '.viewers', function() {
-	var $el, channelHref;
+	var $viewers, $channel, $profilePhoto, channelHref;
 	
-	$el = $(this);
-	channelHref = $el.closest('.channel.js-channel').find('.profile-photo').attr('href');
+	console.log('viewers', $viewers = $(this));
+	console.log('channel', $channel = $viewers.closest('.channel.js-channel'));
+	console.log('profilePhoto', $profilePhoto = $channel.find('.profile-photo'));
+	console.log('channelHref', channelHref = $profilePhoto.attr('href'));
 	
-	$el.click(() => openWindow(channelHref, window.POPUP_WIDTH_PERC));
-	
-	console.log('yo')
-})
+	openWindow(channelHref, window.POPUP_WIDTH_PERC);
+});
