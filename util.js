@@ -1,3 +1,5 @@
+window.POPUP_WIDTH_PERC = 25;
+
 function openWindow(url, screenWidthPercentage) {
 	var a = window,
 	b = document,

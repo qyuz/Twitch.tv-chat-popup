@@ -5,7 +5,8 @@
 	"content_scripts": [
 		{
 		  "matches": ["http://www.twitch.tv/directory"],
-		  "js": ["jquery.js", "util.js", "directory.js"]
+		  "js": ["jquery.js", "util.js", "directory.js"],
+		  "css": ["directory.css"]
 		},
 		{
 		  "matches": ["http://www.twitch.tv/directory/game/*"],
