@@ -1,5 +1,11 @@
-console.log('following', $('.following-col'));
-$('.following-col').on('click', '.viewers', function() {
+var followingViewersQuery, $followingViewers;
+
+followingViewersQuery = '.following-col .viewers';
+$followingViewers = $(followingViewersQuery);
+
+console.log('following viewers', $followingViewers);
+
+$('body').on('click', followingViewersQuery, function() {
 	var $viewers, $channel, $profilePhoto, channelHref;
 	
 	console.log('viewers', $viewers = $(this));

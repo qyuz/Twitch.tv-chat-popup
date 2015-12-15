@@ -5,13 +5,13 @@
 	"content_scripts": [
 		{
 		  "matches": ["http://www.twitch.tv/directory"],
-		  "js": ["jquery.js", "util.js", "directory.js"],
-		  "css": ["directory.css"]
+		  "js": ["jquery.js", "util.js", "following.js"],
+		  "css": ["following.css"]
 		},
 		{
 		  "matches": ["http://www.twitch.tv/directory/game/*"],
-		  "js": ["jquery.js", "util.js", "directory.js", "game.js"],
-		  "css": ["directory.css", "game.css"]
+		  "js": ["jquery.js", "util.js", "following.js", "game.js"],
+		  "css": ["following.css", "game.css"]
 		}
 	],
 	"manifest_version": 2
