@@ -9,7 +9,10 @@
 		  "css": ["following.css"]
 		},
 		{
-		  "matches": ["http://www.twitch.tv/directory/game/*"],
+		  "matches": [
+				"http://www.twitch.tv/directory",
+				"http://www.twitch.tv/directory/game/*"
+			],
 		  "js": ["jquery.js", "util.js", "following.js", "game.js"],
 		  "css": ["following.css", "game.css"]
 		}
