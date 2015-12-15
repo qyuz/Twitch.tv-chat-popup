@@ -1,5 +1,11 @@
-console.log('streams', $('.js-streams.streams.items'));
-$('.js-streams.streams.items').on('click', '.info', function() {
+var streamViewersQuery, $streamViewers;
+
+streamViewersQuery = '.js-streams.streams.items .info';
+$streamViewers = $(streamViewersQuery);
+
+console.log('stream viewers', $streamViewers);
+
+$('body').on('click', streamViewersQuery, function() {
 	var $meta, $title, $info, channelHref;
 	
 	console.log('info', $info = $(this));
