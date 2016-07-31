@@ -4,14 +4,19 @@
 	"version": "1.0",
 	"content_scripts": [
 		{
-		  "matches": ["http://www.twitch.tv/directory"],
+		  "matches": [
+			"http://www.twitch.tv/directory",
+			"https://www.twitch.tv/directory"
+		  ],
 		  "js": ["jquery.js", "util.js", "following.js"],
 		  "css": ["following.css"]
 		},
 		{
 		  "matches": [
 				"http://www.twitch.tv/directory",
-				"http://www.twitch.tv/directory/game/*"
+				"http://www.twitch.tv/directory/game/*",
+				"https://www.twitch.tv/directory",
+				"https://www.twitch.tv/directory/game/*"
 			],
 		  "js": ["jquery.js", "util.js", "following.js", "game.js"],
 		  "css": ["following.css", "game.css"]
